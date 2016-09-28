@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}About}{2}{section.1}
+\contentsline {section}{\numberline {2}Data and Processing Outline}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}CTD}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Chipod}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Further processing and analysis}{3}{subsection.2.3}
+\contentsline {section}{\numberline {3}Processing Notes}{4}{section.3}
+\contentsline {subsubsection}{\numberline {3.0.1}Time Offsets}{4}{subsubsection.3.0.1}
+\contentsline {section}{\numberline {4}Example (raw) Chipod Data for 1 cast}{4}{section.4}
+\contentsline {section}{\numberline {5}Results}{14}{section.5}
+\contentsline {section}{\numberline {6}Data from each individual Chipod}{15}{section.6}
+\contentsline {subsection}{\numberline {6.1}SN1013}{15}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}SN2001}{15}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}SN2002}{15}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}SN2003}{15}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}SN2004}{15}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}SN2009}{15}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}SN2020}{15}{subsection.6.7}
+\contentsline {section}{\numberline {7}One variable from all Chipods}{23}{section.7}
