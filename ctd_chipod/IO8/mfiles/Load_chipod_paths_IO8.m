@@ -9,7 +9,7 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
-BaseDir='/Users/Andy/Cruises_Research/ChiPod/IO8S/'
+BaseDir='/Users/Andy/Cruises_Research/ChiPod/IO8/'
 
 % Folder with raw CTD data (.hex and .XMLCON files)
 CTD_data_dir=fullfile(BaseDir,'Data','raw','CTD')
