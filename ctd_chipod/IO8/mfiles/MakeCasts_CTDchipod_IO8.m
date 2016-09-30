@@ -103,7 +103,7 @@ end
 % Loop through each ctd file
 hb=waitbar(0,'Looping through ctd files');
 
-for icast=1:length(CTD_list)
+for icast=71:length(CTD_list)
     
     close all
     clear castname tlim time_range cast_suffix_tmp cast_suffix CTD_24hz
