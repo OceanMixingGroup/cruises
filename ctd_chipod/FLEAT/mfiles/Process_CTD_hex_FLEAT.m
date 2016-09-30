@@ -2,10 +2,7 @@
 %
 % Process_CTD_hex_FLEAT.m
 %
-% Script to process raw (.hex) shipboard (Seabird) CTD data. Part of
-% ctd_processing folder in OSU mixing software github repo. Originally
-% designed to make data needed for CTD-chipod proccesing, but also useful
-% for regular CTD processing.
+% Script to process raw (.hex) shipboard (Seabird) CTD data for FLEAT
 %
 % OUTPUT:
 % - Processed 24Hz data mat files. These are used in
@@ -13,14 +10,6 @@
 % - Procesed and binned (1m) data. The chipod processing uses N^2
 % and dT/dz computed from these.
 % - Summary figures.
-%
-% Instructions:
-% - Copy this file to a new script and save as Process_CTD_hex_[cruise
-% name]
-% - Modify the data directory and output paths
-% - Run script!
-%
-% Modified from original script from Jen MacKinnon @ Scripps. Modified by A. Pickering
 %
 %---------------------
 % 09/30/16 - A. Pickering - andypicke@gmail.com
@@ -60,7 +49,7 @@ ctdlist = dirs(fullfile(CTD_data_dir, [CastString '*.hex']))
 
 %%
 % Loop through each cast
-for icast=1:length(ctdlist)
+for icast=94:length(ctdlist)
     
     
     try

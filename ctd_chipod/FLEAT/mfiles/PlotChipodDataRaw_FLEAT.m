@@ -1,13 +1,13 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% PlotChipodDataRaw_Template.m
+% PlotChipodDataRaw_FLEAT.m
 %
 % Plot the raw chipod data files, to do a quick check for any issues with
 % data.
 %
 %
 %-----------------------------
-% 07/05/16 - A. Pickering - apickering@coas.oregonstate.edu
+% 09/30/16 - A. Pickering - apickering@coas.oregonstate.edu
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
@@ -16,8 +16,8 @@ clear ; close all ; clc
 saveplot=1
 
 % *** Change 'Template' to project name
-Load_chipod_paths_Template
-Chipod_Deploy_Info_Template
+Load_chipod_paths_FLEAT
+Chipod_Deploy_Info_FLEAT
 
 % *** path for 'mixingsoftware' ***
 mixpath='/Users/Andy/Cruises_Research/mixingsoftware/'
@@ -33,7 +33,9 @@ dtt=10;
 isbig=0
 
 %%
+
 for iSN=1:length(allSNs)
+
     clear data_dir chi_file_list Nfiles   whSN
     
     whSN=allSNs{iSN}
@@ -41,12 +43,10 @@ for iSN=1:length(allSNs)
     
     figdir=fullfile(BaseDir,'Figures','chipodraw',whSN)
     ChkMkDir(figdir)
-    
-    
+        
     % make list of all the data files we have
-    chi_file_list=dir( fullfile(data_dir,['/*' whSN '*']))
+    chi_file_list=dir( fullfile(data_dir,['/*.mlg*']))
     Nfiles=length(chi_file_list)
-    %
     
     for whfile=1:Nfiles
         

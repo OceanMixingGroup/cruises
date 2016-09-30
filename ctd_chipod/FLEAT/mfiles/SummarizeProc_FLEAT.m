@@ -1,6 +1,6 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% SummarizeProc_Template.m
+% SummarizeProc_FLEAT.m
 %
 % Load proc_info.mat from MakeCasts and summarize CTD and chippod data.
 %
@@ -21,12 +21,16 @@ clear ; close all
 saveplots=1
 
 %***
-cruise='Template'
-Load_chipod_paths_P15S
+cruise='FLEAT'
+Load_chipod_paths_FLEAT
 %~~~
 
-cd(fullfile(BaseDir,'mfiles'))
-figdir=fullfile(BaseDir,'Figures')
+cruisedir='/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/FLEAT/'
+cd(fullfile(cruisedir,'mfiles'))
+
+%figdir=fullfile(BaseDir,'Figures')
+figdir=fullfile(cruisedir,'Figures')
+ChkMkDir(figdir)
 load(fullfile(BaseDir,'Data','proc_info.mat'))
 
 
@@ -116,7 +120,7 @@ figure(1);clf
 agutwocolumn(1)
 wysiwyg
 
-yl=50*[-1 1];
+yl=30*[-1 1];
 
 for iSN=1:length(proc_info.SNs)
     
@@ -200,7 +204,7 @@ disp('\end{table}')
 
 %% Make a table with deployment info that can be pasted into Latex notes
 
-Chipod_Deploy_Info_P15S
+Chipod_Deploy_Info_FLEAT
 MakeTableChiDeploy(ChiInfo)
 
 %%

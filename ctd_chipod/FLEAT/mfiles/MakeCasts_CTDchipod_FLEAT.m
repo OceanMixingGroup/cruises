@@ -1,6 +1,6 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% MakeCasts_CTDchipod_Template.m
+% MakeCasts_CTDchipod_FLEAT.m
 %
 % This is the 1st part of the CTD-chipod processing. Here we find raw chipod
 % data for each cast, align the data and calibrate etc.. . A mat file is saved
@@ -9,10 +9,9 @@
 % Before running this you will need the Load_Chipod _paths... and
 % Chipod_Deploy_Info.... m-files.
 %
-% The next step in processing is DoChiCalc_Template.m
+% The next step in processing is DoChiCalc_FLEAT.m
 %
-% '***' indicates where changes need to be made to modify the template for
-% specific cruises
+% * Note Ax,Az are switched on SN2002
 %
 % Output files are saved under /chi_proc_path/
 %
@@ -27,8 +26,7 @@
 % - ChiPodTimeseriesPlot.m
 %
 %---------------------
-% 10/26/15 - A.Pickering - Initial coding
-% 06/08/16 - AP - Updating...
+% 09/30/16 - A.Pickering - andypicke@gmail.com
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
@@ -38,16 +36,16 @@ clear ; close all ; clc
 %~~~~~~~~~~~~~~~~~~~~~~~~
 
 % ***
-this_script_name='ProcessCTDchipod_Template.m'
+this_script_name='ProcessCTDchipod_FLEAT.m'
 
 % *** Local path for /mixingsoftware repo ***
 mixpath='/Users/Andy/Cruises_Research/mixingsoftware/';
 
 % *** Load paths for CTD and chipod data
-Load_chipod_paths_TestData
+Load_chipod_paths_FLEAT
 
 % *** Load chipod deployment info
-Chipod_Deploy_Info_template
+Chipod_Deploy_Info_FLEAT
 
 % optional list of bad chi files to ignore
 %bad_file_list_
@@ -68,7 +66,7 @@ addpath(fullfile(mixpath,'adcp'))      ;% need for mergefields_jn.m in load_chip
 % Make a list of all ctd files we have
 CTD_list=dir(fullfile(CTD_out_dir_24hz,['*' ChiInfo.CastString '*.mat*']));
 disp(['There are ' num2str(length(CTD_list)) ' CTD casts to process in ' CTD_out_dir_24hz])
-
+%%
 % Make a text file to print a summary of results to
 MakeResultsTextFile
 
@@ -220,13 +218,14 @@ for icast=1:length(CTD_list)
                     az_correction=this_chi_info.az_correction;
                     
                     % *** Might need something like this here
-                    %                     if strcmp(whSN,'SN2020')
-                    %                         A1=chidat.AX;
-                    %                         A2=chidat.AZ;
-                    %                         rmfield(chidat,{'AX','AZ'})
-                    %                         chidat.AX=A2;
-                    %                         chidat.AZ=A1;
-                    %                     end
+                    if strcmp(whSN,'SN2002')
+                        disp('switching Ax Az')
+                        A1=chidat.AX;
+                        A2=chidat.AZ;
+                        rmfield(chidat,{'AX','AZ'})
+                        chidat.AX=A2;
+                        chidat.AZ=A1;
+                    end
                     
                     proc_info.(whSN).IsChiData(icast)=1;
                     

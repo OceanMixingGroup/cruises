@@ -1,8 +1,8 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% Plot_TP_profiles_EachCast_Template.m
+% Plot_TP_profiles_EachCast_FLEAT.m
 %
-% Template for script to plot TP profiles from all chipods for one
+% FLEAT for script to plot TP profiles from all chipods for one
 % cast. Allows comparison of TP from different sensors.
 %
 % %*** Indicates where changes needed for specific cruises
@@ -10,8 +10,8 @@
 % Saves figures to /BaseDir/Figures/TPprofiles
 %
 % Dependencies:
-% Load_chipod_paths_Template.m
-% Chipod_Deploy_Info_Template.m
+% Load_chipod_paths_FLEAT.m
+% Chipod_Deploy_Info_FLEAT.m
 % MakeCasts... needs to be run first
 %
 %-----------------
@@ -25,9 +25,9 @@ clear ; close all
 saveplot=1
 
 % *** Data paths
-Load_chipod_paths_Template
+Load_chipod_paths_FLEAT
 % *** load deployment info
-Chipod_Deploy_Info_Template
+Chipod_Deploy_Info_FLEAT
 % You should't have to modify anything below this
 %~~~~~~~~~~~~~~~~~~~~~~
 
@@ -251,7 +251,9 @@ for icast=1:Ncasts
     end
     
     if saveplot==1
-        figdir=fullfile(BaseDir,'Figures','TPprofiles');
+%        figdir=fullfile(BaseDir,'Figures','TPprofiles');
+        cruisedir='/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/FLEAT/'
+        figdir=fullfile(cruisedir,'Figures','TPprofiles')
         ChkMkDir(figdir)
         print( fullfile( figdir , ['TP_profs_' castname] ) , '-dpng' )
     end
