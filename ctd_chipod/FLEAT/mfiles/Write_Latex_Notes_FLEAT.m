@@ -1,25 +1,30 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% Write_Latex_Notes.m
+% Write_Latex_Notes_FLEAT.m
 %
 % Script to write an entire .tex file for standard ctd-Chipod cruise notes
 %
 %-------------
-% 09/27/16 - A.Pickering - andypicke@gmail.com
+% 10/4/16 - A.Pickering - andypicke@gmail.com
 %~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
 clear ; close all
 
-project='IO9'
+%***
+project='FLEAT'
+cruisedir='/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/FLEAT/'
+NotesDir=fullfile(cruisedir,'Notes')
+ChkMkDir(NotesDir)
 
-Chipod_Deploy_Info_IO9
+%***
+Chipod_Deploy_Info_FLEAT
 
 %% open a text file
 
-txtfname=['Chipod_Note_' project '_test.tex'];
+txtfname=['Chipod_Notes_' project '.tex'];
 
-fileID= fopen(fullfile(txtfname),'w');
+fileID= fopen(fullfile(NotesDir,txtfname),'w');
 %%
 % if exist(fullfile(chi_proc_path,txtfname),'file')==2
 %     % results file for this day exists, append a # to it to make new file
