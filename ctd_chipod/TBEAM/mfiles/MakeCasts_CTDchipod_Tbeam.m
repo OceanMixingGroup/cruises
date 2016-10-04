@@ -64,16 +64,21 @@ disp(['\n There are ' num2str(length(CTD_list)) ' CTD casts to process in ' CTD_
 
 % Make a structure to save processing summary info
 
-if ~exist('Xproc.mat','file')
+% Make a structure to save processing summary info
+
+if ~exist(fullfile(BaseDir,'Data','proc_info.mat'),'file')
     
-    Xproc=struct;
-    Xproc.SNs=ChiInfo.SNs;
-    Xproc.icast=nan*ones(1,length(CTD_list));
-    Xproc.Name=cell(1,length(CTD_list));
-    Xproc.duration=nan*ones(1,length(CTD_list));
-    Xproc.MaxP=nan*ones(1,length(CTD_list));
-    Xproc.Prange=nan*ones(1,length(CTD_list));
-    Xproc.drange=nan*ones(length(CTD_list),2);
+    proc_info=struct;
+    proc_info.Project=ChiInfo.Project;
+    proc_info.SNs=ChiInfo.SNs;
+    proc_info.icast=nan*ones(1,length(CTD_list));
+    proc_info.Name=cell(1,length(CTD_list));
+    proc_info.duration=nan*ones(1,length(CTD_list));
+    proc_info.MaxP=nan*ones(1,length(CTD_list));
+    proc_info.Prange=nan*ones(1,length(CTD_list));
+    proc_info.drange=nan*ones(length(CTD_list),2);
+    proc_info.lon=nan*ones(1,length(CTD_list));
+    proc_info.lat=nan*ones(1,length(CTD_list));
     
     empt_struct.toffset=nan*ones(1,length(CTD_list));
     empt_struct.IsChiData=nan*ones(1,length(CTD_list));
@@ -81,13 +86,14 @@ if ~exist('Xproc.mat','file')
     empt_struct.T2cal=nan*ones(1,length(CTD_list));
     
     for iSN=1:length(ChiInfo.SNs)
-        Xproc.(ChiInfo.SNs{iSN})=empt_struct ;
+        proc_info.(ChiInfo.SNs{iSN})=empt_struct ;
     end
     
 else
-    disp('Xproc already exists, will load and add to it')
-    load('Xproc.mat')
+    disp('proc_info already exists, will load and add to it')
+    load(fullfile(BaseDir,'Data','proc_info.mat'))
 end
+
 
 %%
 % Loop through each ctd file
@@ -153,12 +159,16 @@ for icast=1:length(CTD_list)
     CTD_24hz.p(ib)=nan;
     CTD_24hz.t1(ib)=nan;
             
-    Xproc.icast(icast)=icast;
-    Xproc.Name(icast)={castStr};
-    Xproc.MaxP(icast)=nanmax(CTD_24hz.p);
-    Xproc.duration(icast)=nanmax(CTD_24hz.datenum)-nanmin(CTD_24hz.datenum);
-    Xproc.Prange(icast)=range(CTD_24hz.p);
-    Xproc.drange(icast,:)=time_range;
+    proc_info.icast(icast)=icast;
+    proc_info.Name(icast)={castStr};
+    proc_info.MaxP(icast)=nanmax(CTD_24hz.p);
+    proc_info.duration(icast)=nanmax(CTD_24hz.datenum)-nanmin(CTD_24hz.datenum);
+    proc_info.Prange(icast)=range(CTD_24hz.p);
+    proc_info.drange(icast,:)=time_range;
+    
+    proc_info.lon(icast)=nanmean(CTD_24hz.lon);
+    proc_info.lat(icast)=nanmean(CTD_24hz.lat);
+    
 
     %-- loop through each chipod  --
     for iSN=1%:length(ChiInfo.SNs)
@@ -217,7 +227,7 @@ for icast=1:length(CTD_list)
                     chidat=load_chipod_data(chi_path,time_range,suffix,isbig,1);
                     if length(chidat.datenum)>1000
                         
-                        Xproc.(whSN).IsChiData(icast)=1;
+                        proc_info.(whSN).IsChiData(icast)=1;
                         
                         ab=get(gcf,'Children');
                         axes(ab(end));
@@ -319,14 +329,14 @@ for icast=1:length(CTD_list)
                                 cal_good_T2=1;
                                 
                             end
-                            Xproc.(whSN).T2cal(icast)=cal_good_T2;
+                            proc_info.(whSN).T2cal(icast)=cal_good_T2;
                         else
                             cal_good_T2=nan;
                         end
                         
                         
-                        Xproc.(whSN).T1cal(icast)=cal_good_T1;
-                        Xproc.(whSN).toffset(icast)=chidat.time_offset_correction_used*86400; % in sec
+                        proc_info.(whSN).T1cal(icast)=cal_good_T1;
+                        proc_info.(whSN).toffset(icast)=chidat.time_offset_correction_used*86400; % in sec
                         
                         %~~~~
                         do_timeseries_plot=1;
@@ -418,7 +428,7 @@ for icast=1:length(CTD_list)
                     else
                         disp('no good chi data for this profile');
                         fprintf(fileID,' No chi file found ');
-                        Xproc.(whSN).IsChiData(icast)=0;
+                        proc_info.(whSN).IsChiData(icast)=0;
                     end % if we have good chipod data for this profile
                                         
                 end % SN1006 before switched to little CTD
@@ -434,16 +444,27 @@ for icast=1:length(CTD_list)
     end % each chipod on rosette (up_down_big)
     
     % save processing info (save after each cast in case it crashes)
-    Xproc.MakeInfo=['Made ' datestr(now) ' w/ ' this_script_name]
-    Xproc.last_iSN=iSN;
-    Xproc.last_icast=icast;
-    save('Xproc.mat','Xproc')
+    proc_info.MakeInfo=['Made ' datestr(now) ' w/ ' this_script_name]
+    proc_info.last_iSN=iSN;
+    proc_info.last_icast=icast;
+    save(fullfile(BaseDir,'Data','proc_info.mat'),'proc_info')
     
 end % icast (each CTD file)
 
 delete(hb)
 
 telapse=toc(tstart)
+
+% throw out any bad ranges in proc_info
+proc_info.Prange(find(proc_info.Prange>8000))=nan;
+
+proc_info.Readme={'Prange : max pressure of each CTD cast' ; ...
+    'drange : time range of each cast (datenum)' ;...
+    'Name : CTD filename for each cast';...
+    'duration : length of cast in days'}
+
+save(fullfile(BaseDir,'Data','proc_info.mat'),'proc_info')
+
 
 %##
 fprintf(fileID,['\n \n Done! \n Processing took ' num2str(telapse/60) ' mins to run']);
