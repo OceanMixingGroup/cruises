@@ -1,14 +1,14 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% DoChiCalc_Template.m
+% DoChiCalc_FLEAT.m
 %
-% Template for script to do chi calculations for CTD-chipod data. This is
+% FLEAT for script to do chi calculations for CTD-chipod data. This is
 % second step of CTD-chipod processing.
 %
 % '***' indicates where changes need to be made to modify the template for
 % specific cruises
 %
-% *MakeCasts_CTDchipod_Template.m needs to be run first*
+% *MakeCasts_CTDchipod_FLEAT.m needs to be run first*
 %
 % The actual iterative chi computation is done with get_chipod_chi.m, which
 % is in /mixingsoftware/chipod/compute_chi/.
@@ -39,13 +39,13 @@ clear ; close all
 
 %~~~~~~~~~~~~~~~~~~~~~
 % ***
-this_script_name='DoChiCalc_Template.m'
+this_script_name='DoChiCalc_FLEAT.m'
 
 % *** load/set paths for data
-Load_chipod_paths_TestData
+Load_chipod_paths_FLEAT
 
 % *** load deployment info
-Chipod_Deploy_Info_template
+Chipod_Deploy_Info_FLEAT
 
 % *** Local path for /mixingsoftware repo ***
 mixpath='/Users/Andy/Cruises_Research/mixingsoftware/';

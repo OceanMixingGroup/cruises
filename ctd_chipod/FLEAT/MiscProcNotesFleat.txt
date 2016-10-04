@@ -1,0 +1,25 @@
+
+10/03/16 - A.Pickering - andypicke@gmail.com
+
+* Note chi pods were removed/redpeloyed on CTD during cruise (put on SWIMS)
+
+I’m using info from MiscProcNotesFleat.txt (notes from Amy W. during cruise)
+
+Start (June 7 2016):
+- SN1013 up
+- SN2002 down
+
+This was a towyo, ended on 9 June.
+
+Chi pods were then deployed on  SWIMS.
+
+13 June - all 3 chi pods back on CTD.
+- 2002 down  (same)
+- 1013 up (same)
+- 2014 up
+
+
+21 June - CTD again
+- 1013 up (same)
+- 2014 up (same)
+- 2002 down (same)

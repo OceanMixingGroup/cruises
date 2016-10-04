@@ -1,8 +1,8 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% PlotXCsummaries_Template.m
+% PlotXCsummaries_FLEAT.m
 %
-% A template for making mostly automated summary plots of CTD0-chipod data
+% A template for making mostly automated summary plots of CTD-chipod data
 %
 % Uses structure 'XC' made w/ Make_Combined_Chi_Struct_...
 %
@@ -17,7 +17,7 @@
 % - PlotChipodXC_OneVarAllSN
 %
 %------------
-% 06/14/16 - A.Pickering - apickering@coas.oregonstate.edu
+% 10/4/16 - A.Pickering - apickering@coas.oregonstate.edu
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
@@ -26,22 +26,26 @@ clear ; close all
 saveplot=1
 
 %***
-Load_chipod_paths_Template
-Chipod_Deploy_Info_Template
+Load_chipod_paths_FLEAT
+Chipod_Deploy_Info_FLEAT
 addpath /Users/Andy/Cruises_Research/mixingsoftware/CTD_Chipod/mfiles/
+cruisedir='/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/FLEAT/'
 %***
+
+figdir=fullfile(cruisedir,'Figures')
 
 %*** change this if not using default processing Params
 Params=SetDefaultChiParams
 
 pathstr=MakePathStr(Params)
 
-load(fullfile(BaseDir,'data',[ChiInfo.Project '_XC_' pathstr]),'XC')
+load(fullfile(BaseDir,'Data',[ChiInfo.Project '_XC_' pathstr]),'XC')
 
-xvar='lat'
-%xvar='dnum'
+%***
+%xvar='lat'
+xvar='dnum'
 
-for iSN=1:length(ChiInfo.SNs)
+for iSN=1%1:length(ChiInfo.SNs)
     clear X
     whsens='T1'
     whSN=ChiInfo.SNs{iSN}
@@ -54,7 +58,7 @@ for iSN=1:length(ChiInfo.SNs)
     ax=PlotChipodXC_allVars(XC,whSN,castdir,whsens,xvar);
     
     if saveplot==1
-        print(fullfile(BaseDir,'Figures',['XC_' whSN '_Vs_' xvar '_' castdir 'AllVars']),'-dpng')
+        print(fullfile(figdir,['XC_' whSN '_Vs_' xvar '_' castdir 'AllVars']),'-dpng')
     end
     
     
@@ -82,7 +86,7 @@ for ivar=1:2
     linkaxes(ax)
     
     if saveplot==1
-        print(fullfile(BaseDir,'Figures',[ChiInfo.Project '_' whvar '_AllSNs_Vslat']),'-dpng')
+        print(fullfile(figdir,[ChiInfo.Project '_' whvar '_AllSNs_Vslat']),'-dpng')
     end
     
 end % ivar

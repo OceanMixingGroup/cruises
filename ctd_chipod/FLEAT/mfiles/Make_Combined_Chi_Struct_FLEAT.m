@@ -1,6 +1,6 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% Make_Combined_Chi_Struct_Template.m
+% Make_Combined_Chi_Struct_FLEAT.m
 %
 % Combine all processed CTD-chipod profiles into one structure. Processed
 % files come from DoChiCalc...m
@@ -8,22 +8,23 @@
 % %*** Indicates where you will need to change for your specific cruise. 
 %
 % Dependencies:
-% - Load_chipod_paths_Template.m
-% - Chipod_Deploy_Info_Template.m
+% - Load_chipod_paths_FLEAT.m
+% - Chipod_Deploy_Info_FLEAT.m
 % - binprofile.m
 %
 %----------------------------------
-% 06/13/16 - AP - A. Pickering - apickering@coas.oregonstate.edu
+% 10/3/16 - AP - A. Pickering - apickering@coas.oregonstate.edu
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %% 
 
 clear ; close all
 
 %***
-Load_chipod_paths_Template
-Chipod_Deploy_Info_Template
-this_file_name='Make_Combined_Chi_Struct_Template.m'
-savedata=0
+Load_chipod_paths_FLEAT
+Chipod_Deploy_Info_FLEAT
+this_file_name='Make_Combined_Chi_Struct_FLEAT.m'
+savedata=1
+
 % Local path for /mixingsoftware repo ***
 mixpath='/Users/Andy/Cruises_Research/mixingsoftware/';
 %***
@@ -171,7 +172,7 @@ end % wh SN
 
 if savedata==1
     pathstr=MakePathStr(Params)
-    save(fullfile(BaseDir,'data',[ChiInfo.Project '_XC_' pathstr]),'XC')
+    save(fullfile(BaseDir,'Data',[ChiInfo.Project '_XC_' pathstr]),'XC')
 end
 
 %%
