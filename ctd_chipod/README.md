@@ -11,3 +11,8 @@ For each cruise, I envision having:
 - map of profile locations
 - Plots of raw data, and profiles for each cast
 - m-files used for processing raw data
+
+Directory Structure:
+- Figures
+- mfiles
+- Notes
