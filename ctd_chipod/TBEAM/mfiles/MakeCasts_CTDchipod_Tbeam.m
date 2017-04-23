@@ -11,6 +11,8 @@
 %
 % * Need to RUN for all *
 %
+% cast 31 is a month long??
+%
 %---------------------
 % 11/10/15 - A.Pickering - Initial coding
 % 12/10/15 - AP - Got SN1006 sort of working. Time offset doesn't work on
@@ -21,12 +23,13 @@
 % 02/02/16 - AP - Cleaning up and streamlining a bit.
 % 02/02/16 - AP - Also add condition to skip, not save file if T cal not good
 % 06/01/16 - AP - Modify to use entire CTD file name
+%
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
 clear ; close all ; clc
 
-this_script_name='ProcessCTDchipod_Falkor_Big.m'
+this_script_name='MakeCasts_CTDchipod_Tbeam.m'
 
 % start a timer
 tstart=tic;
@@ -43,11 +46,11 @@ addpath(fullfile(mixpath,'marlcham')); % for integrate.m
 addpath(fullfile(mixpath,'adcp')); % need for mergefields_jn.m in load_chipod_data
 
 % Load paths for CTD and chipod data
-Load_chipod_paths_TTide_Falkor
+Load_chipod_paths_Tbeam
 ChkMkDir(chi_proc_path)
 
 % Load chipod deployment info
-Chipod_Deploy_Info_TTIDE_Falkor_Big
+Chipod_Deploy_Info_Tbeam
 
 % load list of bad files to ignore
 bad_file_list_TTIDE_Falkor
@@ -99,7 +102,8 @@ end
 % Loop through each ctd file
 hb=waitbar(0,'Looping through ctd files');
 
-for icast=1:length(CTD_list)
+% CTD cast 31 is month long...
+for icast=82:length(CTD_list)%[1:30 32:length(CTD_list)]
     
     close all
     clear castname tlim time_range cast_suffix_tmp cast_suffix CTD_24hz
@@ -111,8 +115,8 @@ for icast=1:length(CTD_list)
     castname=CTD_list(icast).name
     
     %##
-    fprintf(fileID,[ '\n\n\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' ]);
-    fprintf(fileID,[' \n \n CTD-file: ' castname ' (icast=' num2str(icast) ')' ]);
+    fprintf(fileID,[ '\n\n\n\n ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' ]);
+    fprintf(fileID,[' \n \n Working on CTD-file: ' castname ' (icast=' num2str(icast) ')' ]);
     %##
     
     % Load 24hz CTD profile
@@ -138,7 +142,7 @@ for icast=1:length(CTD_list)
     
     % Name of CTD cast to use (assumes 24Hz CTD cast files end in '_raw.mat'
     castStr=castname(1:end-8)
-      
+    
     % edit out some obvious spikes in CTD temp so they don't screw up
     % calibrations etc.
     clear ib
@@ -158,7 +162,7 @@ for icast=1:length(CTD_list)
     ib=find(abs(diffs(CTD_24hz.p))>10);
     CTD_24hz.p(ib)=nan;
     CTD_24hz.t1(ib)=nan;
-            
+    
     proc_info.icast(icast)=icast;
     proc_info.Name(icast)={castStr};
     proc_info.MaxP(icast)=nanmax(CTD_24hz.p);
@@ -169,9 +173,9 @@ for icast=1:length(CTD_list)
     proc_info.lon(icast)=nanmean(CTD_24hz.lon);
     proc_info.lat(icast)=nanmean(CTD_24hz.lat);
     
-
+    
     %-- loop through each chipod  --
-    for iSN=1%:length(ChiInfo.SNs)
+    for iSN=1:length(ChiInfo.SNs)
         
         try
             close all
@@ -179,7 +183,7 @@ for icast=1:length(CTD_list)
             
             whSN=ChiInfo.SNs{iSN};
             this_chi_info=ChiInfo.(whSN);
-                        
+            
             % full path to raw data for this chipod
             if strcmp(whSN,'SN1001')
                 %chi_path='/Users/Andy/Cruises_Research/ChiPod/Tasmania/Data/Falkor/chipod/1001'
@@ -193,9 +197,9 @@ for icast=1:length(CTD_list)
             isbig=this_chi_info.isbig;
             cal=this_chi_info.cal;
             
-            fprintf(fileID,[ ' \n\n ---------' ]);
-            fprintf(fileID,[ ' \n ' whSN ]);
-            fprintf(fileID,[ ' \n ---------\n' ]);
+            fprintf(fileID,[ ' \n\n\n --------------' ]);
+            fprintf(fileID,[ ' \n Working on ' whSN ]);
+            fprintf(fileID,[ ' \n --------------\n' ]);
             
             %~~ specific paths for this chipod
             chi_proc_path_specific=fullfile(chi_proc_path,[whSN]);
@@ -206,7 +210,7 @@ for icast=1:length(CTD_list)
             %~~
             
             ax=PlotRawCTDTbeam(CTD_24hz);
-            print('-dpng',fullfile(chi_fig_path_specific,[whSN '_' castStr '_Fig0_RawCTD']))            
+            print('-dpng',fullfile(chi_fig_path_specific,[whSN '_' castStr '_Fig0_RawCTD']))
             
             %~~ Load chipod data
             if  1 %~exist(processed_file,'file')
@@ -223,7 +227,7 @@ for icast=1:length(CTD_list)
                     
                     % Find and load raw chipod data for this time range
                     clear chidat
-%                   chidat=load_chipod_data(chi_path,time_range,suffix,isbig,1,bad_file_list);
+                    %                   chidat=load_chipod_data(chi_path,time_range,suffix,isbig,1,bad_file_list);
                     chidat=load_chipod_data(chi_path,time_range,suffix,isbig,1);
                     if length(chidat.datenum)>1000
                         
@@ -295,7 +299,7 @@ for icast=1:length(CTD_list)
                         ib=find(abs(diff(CTD_24hz.p))>10 );
                         CTD_24hz.p(ib+1)=nan;
                         %CTD_24hz.t1(ib+1)=nan;
-                                                
+                        
                         % Calibrate T and dT/dt
                         [CTD_24hz chidat]=CalibrateChipodCTD(CTD_24hz,chidat,az_correction,1);
                         print('-dpng',fullfile(chi_fig_path_specific,[whSN '_' castStr '_Fig4_dTdtSpectraCheck']))
@@ -354,7 +358,7 @@ for icast=1:length(CTD_list)
                         
                         clear datad_1m datau_1m chi_inds p_max ind_max ctd binned_name
                         
-                        binned_name=castname(1:end-17); % CTD file naming for this project is weird...                        
+                        binned_name=castname(1:end-17); % CTD file naming for this project is weird...
                         
                         if cal_good_T1==1 || cal_good_T2==1
                             
@@ -430,14 +434,14 @@ for icast=1:length(CTD_list)
                         fprintf(fileID,' No chi file found ');
                         proc_info.(whSN).IsChiData(icast)=0;
                     end % if we have good chipod data for this profile
-                                        
+                    
                 end % SN1006 before switched to little CTD
                 
             else
                 disp('this file already processed')
                 fprintf(fileID,' file already exists, skipping ');
             end % already processed
-                        
+            
         catch
             fprintf(fileID,['Error on icast=' num2str(icast) ', ' whSN]);
         end % try

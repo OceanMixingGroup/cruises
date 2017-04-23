@@ -25,6 +25,7 @@ Chipod_Deploy_Info_FLEAT
 txtfname=['Chipod_Notes_' project '.tex'];
 
 fileID= fopen(fullfile(NotesDir,txtfname),'w');
+
 %%
 % if exist(fullfile(chi_proc_path,txtfname),'file')==2
 %     % results file for this day exists, append a # to it to make new file
@@ -49,15 +50,18 @@ fprintf(fileID,'\\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/
 
 %% set graphics paths (need to loop over SNs)
 
+figdir=fullfile(cruisedir,'Figures')
 
 %*** Set graphics path for figures
 fprintf(fileID,'\\graphicspath{\n')
-fprintf(fileID,['{/Users/Andy/Cruises_Research/Chipod/' project '/}\n'])
-fprintf(fileID,['{/Users/Andy/Cruises_Research/Chipod/' project '/Figures/}\n'])
+%fprintf(fileID,['{/Users/Andy/Cruises_Research/Chipod/' project '/}\n'])
+%fprintf(fileID,['{/Users/Andy/Cruises_Research/Chipod/' project '/Figures/}\n'])
+fprintf(fileID,['{' figdir '/}\n'])
 
 % need to loop through and add path to each SN here
 
 for iSN=1:length(ChiInfo.SNs)
+%    fprintf(fileID,['{/Users/Andy/Cruises_Research/ChiPod/' project '/Data/proc/Chipod/SN' ChiInfo.SNs{iSN} '/figures/}\n'])
     fprintf(fileID,['{/Users/Andy/Cruises_Research/ChiPod/' project '/Data/proc/Chipod/SN' ChiInfo.SNs{iSN} '/figures/}\n'])
 end
 fprintf(fileID,'} \n\n')

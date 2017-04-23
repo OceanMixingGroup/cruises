@@ -1,0 +1,185 @@
+\documentclass[11pt]{article} 
+\usepackage{geometry} 
+\geometry{letterpaper} 
+\usepackage{graphicx} 
+\usepackage{amssymb} 
+\usepackage{amsmath} 
+\usepackage{epstopdf} 
+\usepackage{hyperref} 
+\usepackage{natbib} 
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png} 
+\graphicspath{
+{/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/FLEAT/Figures/}
+{/Users/Andy/Cruises_Research/ChiPod/FLEAT/Data/proc/Chipod/SNSN2014/figures/}
+{/Users/Andy/Cruises_Research/ChiPod/FLEAT/Data/proc/Chipod/SNSN2002/figures/}
+{/Users/Andy/Cruises_Research/ChiPod/FLEAT/Data/proc/Chipod/SNSN1013/figures/}
+} 
+
+\title{FLEAT CTD-Chipod Notes} 
+\author{Andy Pickering} 
+\begin{document} 
+\maketitle 
+\tableofcontents 
+\newpage 
+
+\section{About} 
+
+Notes on processing and analysis of CTD-chipod data collected during FLEAT cruise.. 
+
+\begin{figure}[htbp] 
+\includegraphics[width=38pc]{FLEAT_kml_map.jpg} 
+\caption{Map of CTD cast locations during cruise FLEAT.} 
+\label{map} 
+\end{figure} 
+
+\section{Data and Processing} 
+
+Data paths are set w/ :  
+\begin{itemize} 
+\item erb+Load_chipod_paths_FLEAT.m+ 
+\end{itemize} 
+
+Chipod deployment info is given in  
+\begin{itemize} 
+\item erb+Chipod_Deploy_Info_FLEAT+ 
+\end{itemize} 
+
+\subsection{CTD} 
+
+Raw (hex) CTD data are processed with: 
+\begin{itemize} 
+\item erb+Process_CTD_hex_FLEAT.m+ 
+\end{itemize} 
+
+\subsection{Chipod} 
+
+\begin{table}[htdp] 
+\caption{Summary of Chipod deployment .} 
+\begin{center} 
+\begin{tabular}{|c|c|c|c|} 
+\hline 
+\end{tabular} 
+\end{center} 
+\label{default} 
+\end{table}Raw chipod files are plotted with  
+\begin{itemize} 
+\item erb+PlotChipodDataRaw_FLEAT.m+ 
+\end{itemize} 
+to check for obvious issues/malfunctions with any of the instruments; these plots are saved in erb+/Figures/chipodraw/+.  
+Based on a quick look at these: 
+\begin{itemize} 
+\item 
+\end{itemize} 
+
+Files with obviously bad or missing data (based on above raw plots) are noted in erb+bad_file_list_XXXX.m+ and, which will prevent them from being loaded in the processing. 
+
+Processing scripts are: 
+\begin{itemize} 
+\item erb+MakeCasts_CTDchipod_FLEAT.m+ 
+\item erb+DoChiCalc_FLEAT.m+ 
+\end{itemize} 
+
+\subsection{Further processing and analysis} 
+
+\begin{itemize} 
+\item Data from all casts are combined into a single structure w/ erb+MakeCombinedStruct_FLEAT.m+ 
+\item  
+\end{itemize} 
+
+\newpage 
+
+\section{Processing Notes} 
+
+\begin{itemize} 
+\item Table ef{chidepinfo} gives the info for $\item Table ef{procsum} gives a summary of the processing from MakeCasts. 
+\end{itemize} 
+
+% make and insert table 1 
+
+% make and insert table 2 
+
+% continue... 
+
+\subsubsection{Time Offsets} 
+
+\begin{figure}[htbp] 
+
+\includegraphics[scale=1]{FLEAT_timeoffsets_all.png} 
+\caption{Time-offsets for all $\chi$pods, found by aligning with CTD data.} 
+\label{toffs} 
+\end{figure} 
+
+\newpage 
+
+\section{Example Raw Chipod Data for 1 cast} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{SNSN2014_001_Fig1_RawChipodTS.png} 
+\caption{Raw chipod data from SNSN2014for a CTD cast.} 
+\label{snSN2014_1} 
+\end{figure} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{SNSN2002_001_Fig1_RawChipodTS.png} 
+\caption{Raw chipod data from SNSN2002for a CTD cast.} 
+\label{snSN2002_1} 
+\end{figure} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{SNSN1013_001_Fig1_RawChipodTS.png} 
+\caption{Raw chipod data from SNSN1013for a CTD cast.} 
+\label{snSN1013_1} 
+\end{figure} 
+
+\newpage 
+
+\section{Results} 
+
+\clearpage 
+
+\subsubsection{CTD Data } 
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{FLEAT_ctd_t_s.png} 
+\caption{Plot of temperature and salinity from CTD downcasts on all casts.} 
+\label{} 
+\end{figure} 
+
+\clearpage 
+
+\subsubsection{Data from each individual Chipod} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{XC_SNSN2014_Vs_lat_AllVars.png} 
+\caption{All chipod profiles from sensor SNSN2014. Variables are: N2, dTdz, chi, eps, and KT.} 
+\label{} 
+\end{figure} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{XC_SNSN2002_Vs_lat_AllVars.png} 
+\caption{All chipod profiles from sensor SNSN2002. Variables are: N2, dTdz, chi, eps, and KT.} 
+\label{} 
+\end{figure} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{XC_SNSN1013_Vs_lat_AllVars.png} 
+\caption{All chipod profiles from sensor SNSN1013. Variables are: N2, dTdz, chi, eps, and KT.} 
+\label{} 
+\end{figure} 
+
+\clearpage 
+\newpage 
+\subsubsection{One variable from all Chipods} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{FLEAT_chi_AllSNs_Vslat.png} 
+\caption{Plot of one variable from all chipods.} 
+\label{} 
+\end{figure} 
+
+\begin{figure}[htbp] 
+\includegraphics[scale=0.7]{FLEAT_KT_AllSNs_Vslat.png} 
+\caption{Plot of one variable from all chipods.} 
+\label{} 
+\end{figure} 
+
+\end{document}  

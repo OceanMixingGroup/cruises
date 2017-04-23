@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}About}{2}{section.1}
+\contentsline {section}{\numberline {2}Data and Processing}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}CTD}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Chipod}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Further processing and analysis}{2}{subsection.2.3}
+\contentsline {section}{\numberline {3}Processing Notes}{4}{section.3}
+\contentsline {subsubsection}{\numberline {3.0.1}Time Offsets}{4}{subsubsection.3.0.1}
+\contentsline {section}{\numberline {4}Example Raw Chipod Data for 1 cast}{6}{section.4}
+\contentsline {section}{\numberline {5}Results}{7}{section.5}
+\contentsline {subsubsection}{\numberline {5.0.2}CTD Data }{8}{subsubsection.5.0.2}
+\contentsline {subsubsection}{\numberline {5.0.3}Data from each individual Chipod}{9}{subsubsection.5.0.3}
+\contentsline {subsubsection}{\numberline {5.0.4}One variable from all Chipods}{10}{subsubsection.5.0.4}

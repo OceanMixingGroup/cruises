@@ -16,13 +16,19 @@
 clear ; close all
 
 % ***
-this_script_name='DoChiCalc_TTide_Falkor.m'
+this_script_name='DoChiCalc_TTide_Tbeam.m'
 
 % *** load/set paths for data
-Load_chipod_paths_TTide_Falkor
+Load_chipod_paths_Tbeam
 
 % *** load deployment info
-Chipod_Deploy_Info_TTIDE_Falkor_Big
+Chipod_Deploy_Info_Tbeam
+
+% *** Local path for /mixingsoftware repo ***
+mixpath='/Users/Andy/Cruises_Research/mixingsoftware/';
+
+cruisepath='/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/Tbeam/'
+%#addp
 
 %~~ set some params for following calcs
 do_T2_big=1;         % do calc for T2 if big chipod
@@ -38,6 +44,10 @@ Params.fc=99;        % cutoff frequency for response correction
 Params.gamma=0.2;    % mixing efficiency
 %~~
 
+% Add paths we need from mixing software
+addpath(fullfile(mixpath,'CTD_Chipod','mfiles')) ;
+addpath(fullfile(mixpath,'chipod','compute_chi')); % get_chipod_chi.md
+
 
 %~~ Below this line, nothing should need to be changed for different
 %cruises
@@ -47,13 +57,13 @@ if Params.resp_corr==0
     Params.fc=99;
 end
 
-addpath /Users/Andy/Cruises_Research/mixingsoftware/CTD_Chipod/mfiles/
+%addpath /Users/Andy/Cruises_Research/mixingsoftware/CTD_Chipod/mfiles/
 
 % initialize a text file for summary of processing
 MakeResultsTextFile_ChiCalc_DoChiCalc
 %%
 % choose which sensor to work on
-for iSN=1%:length(ChiInfo.SNs)
+for iSN=1:length(ChiInfo.SNs)
     
     clear whSN
     whSN=ChiInfo.SNs{iSN}
