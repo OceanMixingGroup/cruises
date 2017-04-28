@@ -30,10 +30,10 @@
 
 clear ; close all
 
-% *** Data paths
-Load_chipod_paths_I08
-% *** load deployment info
-Chipod_Deploy_Info_I08
+Project = 'IO8'
+eval(['Load_chipod_paths_' Project ])
+eval(['Chipod_Deploy_Info_' Project ])
+
 
 xl=0.5*[-1 1];
 

@@ -42,11 +42,10 @@ this_script_name='ProcessCTDchipod_IO8.m'
 % *** path for 'mixingsoftware' ***
 mixpath='/Users/Andy/Cruises_Research/mixingsoftware/';
 %addpath /Users/Andy/Cruises_Research/ChiPod/mfiles/
-% *** Load paths for CTD and chipod data
-Load_chipod_paths_IO8
 
-% *** Load chipod deployment info
-Chipod_Deploy_Info_IO8
+Project = 'IO8'
+eval(['Load_chipod_paths_' Project ])
+eval(['Chipod_Deploy_Info_' Project ])
 
 bad_file_list_IO8
 

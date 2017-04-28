@@ -24,10 +24,10 @@ clear ; close all
 
 saveplot=1
 
-% *** Data paths
-Load_chipod_paths_I08
-% *** load deployment info
-Chipod_Deploy_Info_I08
+Project = 'IO8'
+eval(['Load_chipod_paths_' Project ])
+eval(['Chipod_Deploy_Info_' Project ])
+
 
 load(fullfile(BaseDir,'Data','GB.mat'))
 

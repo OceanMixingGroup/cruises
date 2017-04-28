@@ -16,9 +16,10 @@ clear ; close all
 
 saveplot=0
 
-Chipod_Deploy_Info_I08
+Project = 'IO8'
+eval(['Load_chipod_paths_' Project ])
+eval(['Chipod_Deploy_Info_' Project ])
 
-Load_chipod_paths_I08
 
 % loop through chipods
 for iSN=1%:length(ChiInfo.SNs)

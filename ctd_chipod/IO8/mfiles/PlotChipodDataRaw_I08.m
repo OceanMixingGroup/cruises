@@ -20,8 +20,9 @@ addpath(fullfile(mixpath,'general')) % makelen.m in /general is needed
 addpath(fullfile(mixpath,'marlcham')) % for integrate.m
 addpath(fullfile(mixpath,'adcp')) % need for mergefields_jn.m in load_chipod_data
 
-Load_chipod_paths_I08
-Chipod_Deploy_Info_I08
+Project = 'IO8'
+eval(['Load_chipod_paths_' Project ])
+eval(['Chipod_Deploy_Info_' Project ])
 
 
 allSNs=ChiInfo.SNs
