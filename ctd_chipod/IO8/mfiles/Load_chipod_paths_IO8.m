@@ -9,7 +9,9 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
+cruise_path = '/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/'
 BaseDir='/Users/Andy/Cruises_Research/ChiPod/IO8/'
+BaseDir_cruises = fullfile(cruise_path,'IO8')
 
 % Folder with raw CTD data (.hex and .XMLCON files)
 CTD_data_dir=fullfile(BaseDir,'Data','raw','CTD')
@@ -32,14 +34,14 @@ chi_data_path=fullfile(BaseDir,'Data','raw','Chipod')
 % folder for processed chipod output
 chi_proc_path=fullfile(BaseDir,'Data','proc','Chipod')
 
-%chi_fig_path=fullfile(chi_proc_path,'figures');
+fig_path=fullfile(BaseDir_cruises,'figures');
 
 ChkMkDir(CTD_out_dir_root)
 ChkMkDir(CTD_out_dir_bin)
 ChkMkDir(CTD_out_dir_24hz)
 ChkMkDir(CTD_out_dir_figs)
 ChkMkDir(chi_proc_path)
-%ChkMkDir(chi_fig_path)
+ChkMkDir(fig_path)
 
 
 %%
