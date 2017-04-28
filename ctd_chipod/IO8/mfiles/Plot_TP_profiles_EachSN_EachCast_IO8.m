@@ -37,19 +37,13 @@ xl=1*[-1 1];
 CTDlist=dir([CTD_out_dir_bin '/*.mat'])
 Ncasts=length(CTDlist)
 
-% Check if we have any 'big' chipods
-bc=[];
-for iSN=1:length(ChiInfo.SNs);
-    bc=[bc ChiInfo.(ChiInfo.SNs{iSN}).isbig];
-end
-idg=find(bc==1);
-Nbig=length(idg);
+
 %
 hb=waitbar(0)
 
-for icast=1:Ncasts
+for icast = 1:Ncasts
     waitbar(icast/Ncasts,hb)
-    castname=CTDlist(icast).name(1:end-4)
+    castname = CTDlist(icast).name(1:end-4)
     
     ymax=[];
     
@@ -122,7 +116,7 @@ for icast=1:Ncasts
             
             gridxy
             
-           
+            
             
         catch
             % ax(whax)=subplot(rr,cc,iSN+iSNoffset+cc);
@@ -137,10 +131,10 @@ for icast=1:Ncasts
         
         if ~isempty(ymax)
             axes(ax1)
-        ylim([0 nanmax(ymax)])
-                    axes(ax2)
-        ylim([0 nanmax(ymax)])
-
+            ylim([0 nanmax(ymax)])
+            axes(ax2)
+            ylim([0 nanmax(ymax)])
+            
         end
         
         linkaxes([ax1 ax2])
@@ -154,7 +148,7 @@ for icast=1:Ncasts
         
         pause(0.1)
         
-    end % iSN    
+    end % iSN
     
 end % castnum
 

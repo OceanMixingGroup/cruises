@@ -2,12 +2,9 @@
 %
 % Plot_TP_profiles_EachCast_IO8.m
 %
-% Template for script to plot TP profiles from all chipods for one
+% Template for script to plot TP profiles from all chipods for each
 % cast. Allows comparison of TP from different sensors.
 %
-% %*** Indicates where changes needed for specific cruises
-%
-% Saves figures to /BaseDir/Figures/TPprofiles
 %
 % Dependencies:
 % Load_chipod_paths_Template.m
@@ -22,17 +19,19 @@
 
 clear ; close all
 
-saveplot=1
+saveplot = 1
 
-% *** Data paths
-Load_chipod_paths_I08
-% *** load deployment info
-Chipod_Deploy_Info_I08
+Project = 'IO8'
+
+% Data paths
+eval(['Load_chipod_paths_' Project])
+% load deployment info
+eval(['Chipod_Deploy_Info_' Project])
 
 % You should't have to modify anything below this
 %~~~~~~~~~~~~~~~~~~~~~~
 
-xl=0.5*[-1 1];
+xl=0.75*[-1 1];
 
 % Make list of which CTD casts we have processed
 CTDlist=dir([CTD_out_dir_bin '/*.mat'])
@@ -182,7 +181,7 @@ for icast=1:Ncasts
             catch
                 
                 ax(whax)=subplot(rr,cc,iSN+iSNoffset);
-                            xlabel([whsens ' ' castdir])
+                xlabel([whsens ' ' castdir])
                 if strcmp(castdir,ChiInfo.(whSN).InstDir.(whsens))
                     title(whSN,'color','g','fontweight','bold')
                 else
@@ -245,17 +244,17 @@ for icast=1:Ncasts
             end
         end
         
-        
         linkaxes(ax)
     end
     
     if saveplot==1
-        figdir=fullfile(BaseDir,'Figures','TPprofiles');
+        %figdir=fullfile(BaseDir,'Figures','TPprofiles_AllSN');
+        figdir=fullfile(fig_path,'TPprofiles_AllSN');
         ChkMkDir(figdir)
         print( fullfile( figdir , ['TP_profs_' castname] ) , '-dpng' )
     end
     
-    pause(1)
+    pause(0.1)
     
 end % castnum
 
