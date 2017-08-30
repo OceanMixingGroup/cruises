@@ -14,7 +14,8 @@
 ChiInfo = struct();
 ChiInfo.Project = 'IO8';          % Description of project
 ChiInfo.SNs = {'SN1013','SN2020','SN2014','SN2009','SN2004','SN2003','SN2002','SN2001'}; % list of chipod SNs
-ChiInfo.CastString = 'I08S';   % identifying string in CTD cast files
+%ChiInfo.CastString = 'I08S';   % identifying string in CTD cast files
+ChiInfo.CastString = '';
 
 %%~~~~~~~~~~~~~~~~~~~
 % SN 1013 
@@ -29,6 +30,7 @@ S.isbig = 0          ; %
 S.az_correction = -1 ; % See note above
 S.suffix = 'mlg'     ; % suffix for chipod raw data filenames
 S.cal.coef.T1P=0.097 ;% TP calibration coeff (time constant)
+S.flip_ax_az = 0 ;
 ChiInfo.(['SN' SN]) = S ; clear S
 
 %%~~~~~~~~~~~~~~~~~~~
@@ -45,6 +47,7 @@ S.isbig=0; %
 S.az_correction=1;  
 S.suffix='mlg';    
 S.cal.coef.T1P=0.097;
+S.flip_ax_az = 1 ;
 ChiInfo.(['SN' SN])=S;clear S
 
 %%~~~~~~~~~~~~~~~~~~~
@@ -60,6 +63,7 @@ S.isbig=0; %
 S.az_correction=-1;  
 S.suffix='mlg';    
 S.cal.coef.T1P=0.097;
+S.flip_ax_az = 0 ;
 ChiInfo.(['SN' SN])=S;clear S
 
 
@@ -76,6 +80,7 @@ S.isbig=0; %
 S.az_correction=1;  
 S.suffix='mlg';    
 S.cal.coef.T1P=0.097;
+S.flip_ax_az = 1 ;
 ChiInfo.(['SN' SN])=S;clear S
 
 %%~~~~~~~~~~~~~~~~~~~
@@ -91,6 +96,7 @@ S.isbig=0; %
 S.az_correction=1;  
 S.suffix='mlg';    
 S.cal.coef.T1P=0.097;
+S.flip_ax_az = 1 ;
 ChiInfo.(['SN' SN])=S;clear S
 
 
@@ -107,6 +113,7 @@ S.isbig=0; %
 S.az_correction=1; 
 S.suffix='mlg';    
 S.cal.coef.T1P=0.097;
+S.flip_ax_az = 1 ;
 ChiInfo.(['SN' SN])=S;clear S
 
 
@@ -124,6 +131,7 @@ S.isbig=0; %
 S.az_correction=1;  
 S.suffix='mlg';    
 S.cal.coef.T1P=0.097;
+S.flip_ax_az = 1 ;
 ChiInfo.(['SN' SN])=S;clear S
 
 %%~~~~~~~~~~~~~~~~~~~
@@ -139,6 +147,7 @@ S.isbig=0; %
 S.az_correction=1;  
 S.suffix='mlg';    
 S.cal.coef.T1P=0.097;%
+S.flip_ax_az = 1 ;
 ChiInfo.(['SN' SN])=S;clear S
 
 

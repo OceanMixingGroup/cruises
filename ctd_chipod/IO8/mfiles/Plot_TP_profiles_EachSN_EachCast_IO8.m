@@ -77,9 +77,7 @@ for icast = 1:Ncasts
             end
             
             gridxy
-            
-            
-            
+                                    
         catch
             ax1=subplot(121)
             %ax(whax)=subplot(rr,cc,iSN+iSNoffset);

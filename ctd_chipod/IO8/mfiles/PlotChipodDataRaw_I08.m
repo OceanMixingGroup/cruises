@@ -5,6 +5,9 @@
 % Just simple plot of the entire chipod data files, to do a quick check for
 % any issues with data.
 %
+%
+%
+%
 %-----------------------------
 % 05/23/16 - A. Pickering - apickering@coas.oregonstate.edu
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -13,20 +16,20 @@ clear ; close all ; clc
 
 saveplot=1
 
+Project = 'IO8'
+eval(['Load_chipod_paths_' Project ])
+eval(['Chipod_Deploy_Info_' Project ])
+
 % *** path for 'mixingsoftware' ***
 mixpath='/Users/Andy/Cruises_Research/mixingsoftware/'
 addpath(fullfile(mixpath,'CTD_Chipod'))
 addpath(fullfile(mixpath,'general')) % makelen.m in /general is needed
 addpath(fullfile(mixpath,'marlcham')) % for integrate.m
 addpath(fullfile(mixpath,'adcp')) % need for mergefields_jn.m in load_chipod_data
-
-Project = 'IO8'
-eval(['Load_chipod_paths_' Project ])
-eval(['Chipod_Deploy_Info_' Project ])
-
+addpath('/Users/Andy/Cruises_Research/mixingsoftware/CTD_Chipod/mfiles')
 
 allSNs=ChiInfo.SNs
-
+%%
 isbig=0
 %%
 for iSN=1:length(allSNs)
@@ -78,7 +81,6 @@ for iSN=1:length(allSNs)
                 chidat.T1P=out(:,1);
                 chidat.AX=3*out(:,4);
                 chidat.AZ=3*out(:,3);
-                
                 
             end
             
@@ -152,10 +154,10 @@ for iSN=1:length(allSNs)
             end % isbig
             
             if saveplot==1
-                figdir=fullfile(BaseDir,'Figures','chipodraw',whSN)
+                figdir = fullfile(fig_path,'chipodraw',whSN);
                 ChkMkDir(figdir)
-                figname=fullfile(figdir,[chi_file_list(whfile).name(1:end-4)])
-                print('-dpng','-r300',figname)
+                figname = [chi_file_list(whfile).name(1:end-4)]
+                print( fullfile(figdir,figname),'-dpng')
             end
             
         end % try
