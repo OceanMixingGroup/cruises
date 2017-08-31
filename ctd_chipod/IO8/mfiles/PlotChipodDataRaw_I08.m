@@ -25,9 +25,9 @@ eval(['Load_chipod_paths_' Project ])
 eval(['Chipod_Deploy_Info_' Project ])
 
 addpath(fullfile(mixpath,'CTD_Chipod'))
-addpath(fullfile(mixpath,'general')) % makelen.m in /general is needed
+addpath(fullfile(mixpath,'general'))  % makelen.m in /general is needed
 addpath(fullfile(mixpath,'marlcham')) % for integrate.m
-addpath(fullfile(mixpath,'adcp')) % need for mergefields_jn.m in load_chipod_data
+addpath(fullfile(mixpath,'adcp'))     % need for mergefields_jn.m in load_chipod_data
 addpath('/Users/Andy/Cruises_Research/mixingsoftware/CTD_Chipod/mfiles')
 
 allSNs = ChiInfo.SNs
