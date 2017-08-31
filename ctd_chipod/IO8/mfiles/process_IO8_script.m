@@ -1,8 +1,9 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %
-% Start of an overall script to run all CTD-chipod processing for IO8
+% Script to run all CTD-chipod processing for IO8
 %
 %
-%
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
 clear ; close all

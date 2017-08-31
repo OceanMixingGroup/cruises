@@ -9,30 +9,37 @@
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
+%~~~~~~~~~~~~~~~~~ Should only change this section
+
+% base directory for where data is stored
+BaseDir = '/Users/Andy/Cruises_Research/ChiPod/IO8/'
+
+% base directory for plot outputs etc. ('cruises' github repo)
 cruise_path = '/Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/'
-BaseDir='/Users/Andy/Cruises_Research/ChiPod/IO8/'
 BaseDir_cruises = fullfile(cruise_path,'IO8')
 
+%~~~~~~~~~~~~~~~~~
+
 % Folder with raw CTD data (.hex and .XMLCON files)
-CTD_data_dir=fullfile(BaseDir,'Data','raw','CTD')
+CTD_data_dir = fullfile(BaseDir,'Data','raw','CTD')
 
 % Base directory for all processed CTD output
-CTD_out_dir_root=fullfile(BaseDir,'Data','proc','CTD')
+CTD_out_dir_root = fullfile(BaseDir,'Data','proc','CTD')
 
 % Folder to save processed 24Hz CTD mat files to
-CTD_out_dir_24hz=fullfile(CTD_out_dir_root,'24hz')
+CTD_out_dir_24hz = fullfile(CTD_out_dir_root,'24hz')
 
 % Folder to save processed and binned CTD mat files to
-CTD_out_dir_bin=fullfile(CTD_out_dir_root,'binned')
+CTD_out_dir_bin = fullfile(CTD_out_dir_root,'binned')
 
 % Folder to save figures to
-CTD_out_dir_figs=fullfile(CTD_out_dir_root,'figures')
+CTD_out_dir_figs = fullfile(CTD_out_dir_root,'figures')
 
 % folder for raw chi pod data
-chi_data_path=fullfile(BaseDir,'Data','raw','Chipod')
+chi_data_path = fullfile(BaseDir,'Data','raw','Chipod')
 
 % folder for processed chipod output
-chi_proc_path=fullfile(BaseDir,'Data','proc','Chipod')
+chi_proc_path = fullfile(BaseDir,'Data','proc','Chipod')
 
 fig_path=fullfile(BaseDir_cruises,'figures');
 

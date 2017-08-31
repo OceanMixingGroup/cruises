@@ -17,31 +17,34 @@ clear ; close all ; clc
 saveplot=1
 
 Project = 'IO8'
+
+% *** path for 'mixingsoftware' ***
+mixpath = '/Users/Andy/Cruises_Research/mixingsoftware/'
+
 eval(['Load_chipod_paths_' Project ])
 eval(['Chipod_Deploy_Info_' Project ])
 
-% *** path for 'mixingsoftware' ***
-mixpath='/Users/Andy/Cruises_Research/mixingsoftware/'
 addpath(fullfile(mixpath,'CTD_Chipod'))
 addpath(fullfile(mixpath,'general')) % makelen.m in /general is needed
 addpath(fullfile(mixpath,'marlcham')) % for integrate.m
 addpath(fullfile(mixpath,'adcp')) % need for mergefields_jn.m in load_chipod_data
 addpath('/Users/Andy/Cruises_Research/mixingsoftware/CTD_Chipod/mfiles')
 
-allSNs=ChiInfo.SNs
-%%
-isbig=0
+allSNs = ChiInfo.SNs
+
 %%
 for iSN=1:length(allSNs)
+    
     clear data_dir chi_file_list Nfiles   whSN
     
-    whSN=allSNs{iSN}
-    data_dir=fullfile(chi_data_path,whSN)
+    whSN     = allSNs{iSN}
+    data_dir = fullfile(chi_data_path,whSN)
+    
+    isbig = ChiInfo.(whSN).isbig;
     
     % make list of all the data files we have
     chi_file_list=dir( fullfile(data_dir,['/*' whSN '*']))
     Nfiles=length(chi_file_list)
-    %
     
     for whfile=1:Nfiles
         clear fname
