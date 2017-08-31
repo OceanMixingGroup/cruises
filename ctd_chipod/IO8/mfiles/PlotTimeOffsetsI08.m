@@ -29,7 +29,7 @@ for iSN=1%:length(ChiInfo.SNs)
     
     % make list of files for this sensor
     clear Flist
-    Flist = dir( fullfile( chi_proc_path,whSN,'cast',['*' whSN '*.mat']) )
+    Flist = dir( fullfile( chi_proc_path,whSN,'cal',['*' whSN '.mat']) )
     
     tms=nan*ones(1,length(Flist));
     toffs=nan*ones(1,length(Flist));

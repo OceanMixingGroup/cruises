@@ -41,10 +41,10 @@ addpath(fullfile(mixpath,'CTD_Chipod','mfiles'));
 addpath(fullfile(mixpath,'chipod','compute_chi'));
 
 % *** load/set paths for data
-Load_chipod_paths_I08
+Load_chipod_paths_IO8
 
 % *** load deployment info
-Chipod_Deploy_Info_I08
+Chipod_Deploy_Info_IO8
 
 savespec=0 % Option to save spectra
 
@@ -81,7 +81,7 @@ for iSN=1:length(ChiInfo.SNs)
     % Specific paths for this sensor
     clear chi_proc_path_specific chi_fig_path savedir_cal
     chi_proc_path_specific=fullfile(chi_proc_path,[whSN]);
-    chi_fig_path_specific=fullfile(chi_proc_path_specific,'figures')
+    chi_fig_path_specific=fullfile(fig_path,'proc',whSN)
     savedir_cal=fullfile(chi_proc_path_specific,'cal')
     
     %##
