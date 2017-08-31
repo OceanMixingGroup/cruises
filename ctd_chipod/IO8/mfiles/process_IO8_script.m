@@ -14,7 +14,8 @@ PlotChipodDataRaw_I08
 
 MakeCasts_CTDchipod_function(Project)
 
-Plot_TP_profiles_EachCast_IO8
+%Plot_TP_profiles_EachCast_IO8
+Plot_TP_profiles_EachCast_CTDchipod(Project)
 
 Plot_TP_profiles_EachSN_EachCast_IO8
 
