@@ -30,9 +30,9 @@ addpath(fullfile(mixpath,'general'))   ;% makelen.m in /general is needed
 addpath(fullfile(mixpath,'marlcham'))  ;% for integrate.m
 addpath(fullfile(mixpath,'adcp'))      ;% need for mergefields_jn.m in load_chipod_data
 
-%%
+%
 
-PlotChipodDataRaw_General(BaseDir,chi_data_path,fig_path,ChiInfo)
+PlotChipodDataRaw_General(Project,mixpath)
 
 %%
 MakeCasts_CTDchipod_function(Project)
