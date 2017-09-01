@@ -8,10 +8,15 @@
 
 clear ; close all
 
+
+% Should only need to modify below section, and 'Load_chipod_paths_' file
+%~~~~~~~~~~~~~~~~~ 
 Project='IO8'
 
- % * add mixpaths
- mixpath = '/Users/Andy/Cruises_Research/mixingsoftware/';
+% path to 'mixingsoftware' 
+mixpath = '/Users/Andy/Cruises_Research/mixingsoftware/';
+
+%~~~~~~~~~~~~~~~~~
 
 eval(['Load_chipod_paths_' Project])
 eval(['Chipod_Deploy_Info_' Project])
@@ -32,6 +37,7 @@ PlotChipodDataRaw_General(BaseDir,chi_data_path,fig_path,ChiInfo)
 %%
 MakeCasts_CTDchipod_function(Project)
 
+%%
 %Plot_TP_profiles_EachCast_IO8
 Plot_TP_profiles_EachCast_CTDchipod(Project)
 
