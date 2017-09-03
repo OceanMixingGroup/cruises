@@ -3,6 +3,8 @@
 % Script to run all CTD-chipod processing for IO8
 %
 %
+%--------------
+% A.Pickering - andypicke@gmail.com
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %%
 
@@ -30,29 +32,41 @@ addpath(fullfile(mixpath,'general'))   ;% makelen.m in /general is needed
 addpath(fullfile(mixpath,'marlcham'))  ;% for integrate.m
 addpath(fullfile(mixpath,'adcp'))      ;% need for mergefields_jn.m in load_chipod_data
 
-%
+%%
 
 PlotChipodDataRaw_General(Project,mixpath)
 
 %%
-MakeCasts_CTDchipod_function(Project)
+
+MakeCasts_CTDchipod_function(Project,mixpath)
 
 %%
-%Plot_TP_profiles_EachCast_IO8
+
 Plot_TP_profiles_EachCast_CTDchipod(Project)
+
+%%
 
 Plot_TP_profiles_EachSN_EachCast_IO8
 
+%%
+
 %PlotTimeOffsetsI08
 % * replace w/ generic function that uses proc_info.mat file?
+SummarizeChiProc(Project)
 
-VisCheck_TP_profiles_EachCast_IO8
+%% Optional
+
+%VisCheck_TP_profiles_EachCast_IO8
 % * replace w/ generic function?
 
-Plot_TP_profiles_EachCast_IO8_MarkBad
+%Plot_TP_profiles_EachCast_IO8_MarkBad
 
 %%
-DoChiCalc_IO8
+%DoChiCalc_IO8
+do_chi_calc_ctd_chipod(Project,mixpath)
 % * replace w/ generic function?
+
+%% Summarize? combine into XC?
+
 
 %%
