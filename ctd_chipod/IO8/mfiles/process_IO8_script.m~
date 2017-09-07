@@ -33,24 +33,27 @@ addpath(fullfile(mixpath,'general'))   ;% makelen.m in /general is needed
 addpath(fullfile(mixpath,'marlcham'))  ;% for integrate.m
 addpath(fullfile(mixpath,'adcp'))      ;% need for mergefields_jn.m in load_chipod_data
 
-%% Make plots of the raw chipod files
+%%
 
 PlotChipodDataRaw_General(Project,mixpath)
 
-%% Make 'casts'; get chipod data for each CTD profile and save separately
+%%
 
 MakeCasts_CTDchipod_function(Project,mixpath)
 
-%% Plot chipod TP for each cast/instrument
+%%
 
 Plot_TP_profiles_EachCast_CTDchipod(Project)
 
 %%
+
 % replace w/ generic***
 %Plot_TP_profiles_EachSN_EachCast_IO8
 
-%% Make a summary of chipod data/processing
+%%
 
+%PlotTimeOffsetsI08
+% * replace w/ generic function that uses proc_info.mat file?
 SummarizeChiProc(Project)
 
 %% Optional; inspect and mark bad profiles so they don't get processed
@@ -60,21 +63,21 @@ SummarizeChiProc(Project)
 
 %Plot_TP_profiles_EachCast_IO8_MarkBad
 
-%% Do the actual chipod calc for each profile 
+%%
 
-% * Uses default Params for now, need to add Params option to function
-% input
 do_chi_calc_ctd_chipod(Project,mixpath)
+% * add Params option to function
+
 
 %% Combine all profiles into a single structure 'XC'
 
 XC = make_combined_chi_struct(Project,mixpath)
 
-%% Make some standard plots (ie depth-lat transects) from 'XC'
+%%
 
 plot_XC_summaries(Project)
 
-%% Write automated latex notes file w/ some standard info and plots
+%% 
 
 Write_Latex_Notes(Project)
 
