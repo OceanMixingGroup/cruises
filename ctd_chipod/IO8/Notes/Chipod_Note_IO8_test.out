@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{About}{}% 1
+\BOOKMARK [1][-]{section.2}{Data and Processing}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{CTD}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Chipod}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Further processing and analysis}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Processing Notes}{}% 6
+\BOOKMARK [2][-]{subsubsection.3.0.1}{Time Offsets}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Example Raw Chipod Data for 1 cast}{}% 8
+\BOOKMARK [1][-]{section.5}{Results}{}% 9
+\BOOKMARK [2][-]{subsubsection.5.0.1}{CTD Data }{section.5}% 10
+\BOOKMARK [3][-]{subsubsection.5.0.2}{Data from each individual Chipod}{subsubsection.5.0.1}% 11
+\BOOKMARK [3][-]{subsubsection.5.0.3}{One variable from all Chipods}{subsubsection.5.0.1}% 12

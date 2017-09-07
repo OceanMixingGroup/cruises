@@ -1,0 +1,1458 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 SEP 2017 09:47
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Chipod_Note_IO8_test.tex
+(./Chipod_Note_IO8_test.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen113
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen114
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen115
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen122
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count105
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing OFF on input line 4466.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4691.
+\c@Hy@tempcnt=\count106
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5044.
+\XeTeXLinkMargin=\dimen123
+\Fld@menulength=\count107
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing OFF on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip46
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip47
+\bibsep=\skip48
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count113
+)
+(./Chipod_Note_IO8_test.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
+\openout1 = `Chipod_Note_IO8_test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen126
+\scratchbox=\box28
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen127
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks23
+)
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring OFF on input line 35.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count120
+)
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
+
+(./Chipod_Note_IO8_test.out) (./Chipod_Note_IO8_test.out)
+\@outlinefile=\write3
+\openout3 = `Chipod_Note_IO8_test.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(./Chipod_Note_IO8_test.toc)
+\tf@toc=\write4
+\openout4 = `Chipod_Note_IO8_test.toc'.
+
+ [1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: File `IO8_kml_map.jpg' not found on input line 46.
+
+
+./Chipod_Note_IO8_test.tex:46: Package pdftex.def Error: File `IO8_kml_map.jpg'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \includegraphics[width=38pc]{IO8_kml_map.jpg}
+                                                  
+? s
+OK, entering \scrollmode...
+
+Overfull \hbox (25.99538pt too wide) in paragraph at lines 46--47
+[][] 
+ []
+
+./Chipod_Note_IO8_test.tex:57: Text line contains an invalid character.
+l.57 \item 
+            erb+Load_chipod_paths_IO8.m+
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+
+./Chipod_Note_IO8_test.tex:57: Missing $ inserted.
+<inserted text> 
+                $
+l.57 \item erb+Load_
+                     chipod_paths_IO8.m+
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chipod_Note_IO8_test.tex:58: LaTeX Error: Command \end{itemize} invalid in ma
+th mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:58: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:58: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./Chipod_Note_IO8_test.tex:62: Text line contains an invalid character.
+l.62 \item 
+            erb+Chipod_Deploy_Info_IO8+
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+./Chipod_Note_IO8_test.tex:62: Missing $ inserted.
+<inserted text> 
+                $
+l.62 \item erb+Chipod_
+                       Deploy_Info_IO8+
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chipod_Note_IO8_test.tex:63: LaTeX Error: Command \end{itemize} invalid in ma
+th mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:63: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:63: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:63: Missing $ inserted.
+<inserted text> 
+                $
+l.63 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./Chipod_Note_IO8_test.tex:69: Text line contains an invalid character.
+l.69 \item 
+            erb+Process_CTD_hex_IO8.m+
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+./Chipod_Note_IO8_test.tex:69: Missing $ inserted.
+<inserted text> 
+                $
+l.69 \item erb+Process_
+                        CTD_hex_IO8.m+
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chipod_Note_IO8_test.tex:70: LaTeX Error: Command \end{itemize} invalid in ma
+th mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:70: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:70: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:70: Missing $ inserted.
+<inserted text> 
+                $
+l.70 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./Chipod_Note_IO8_test.tex:74: LaTeX Error: Unknown float option `d'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \begin{table}[htdp]
+                        
+Option `d' ignored and `p' used.
+
+./Chipod_Note_IO8_test.tex:84: Text line contains an invalid character.
+l.84 \item 
+            erb+PlotChipodDataRaw_IO8.m+
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+./Chipod_Note_IO8_test.tex:84: Missing $ inserted.
+<inserted text> 
+                $
+l.84 \item erb+PlotChipodDataRaw_
+                                  IO8.m+
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chipod_Note_IO8_test.tex:85: LaTeX Error: Command \end{itemize} invalid in ma
+th mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:85: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:85: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:85: Missing $ inserted.
+<inserted text> 
+                $
+l.85 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./Chipod_Note_IO8_test.tex:86: Text line contains an invalid character.
+l.86 ...he instruments; these plots are saved in 
+                                                  erb+/Figures/chipodraw/+.
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+./Chipod_Note_IO8_test.tex:92: Text line contains an invalid character.
+l.92 ... (based on above raw plots) are noted in 
+                                                  erb+bad_file_list_XXXX.m+ ...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+./Chipod_Note_IO8_test.tex:92: Missing $ inserted.
+<inserted text> 
+                $
+l.92 ...on above raw plots) are noted in erb+bad_
+                                                  file_list_XXXX.m+ and, whi...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chipod_Note_IO8_test.tex:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (1.30449pt too wide) in paragraph at lines 92--93
+\OT1/cmr/m/n/10.95 erb+bad$[]\OML/cmm/m/it/10.95 ile[]ist[]XXX:m \OT1/cmr/m/n/1
+0.95 + \OML/cmm/m/it/10.95 and; whichwillpreventthemfrombeingloadedintheprocess
+ing:$ 
+ []
+
+./Chipod_Note_IO8_test.tex:96: Text line contains an invalid character.
+l.96 \item 
+            erb+MakeCasts_CTDchipod_IO8.m+
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+./Chipod_Note_IO8_test.tex:96: Missing $ inserted.
+<inserted text> 
+                $
+l.96 \item erb+MakeCasts_
+                          CTDchipod_IO8.m+
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chipod_Note_IO8_test.tex:97: LaTeX Error: Command \item invalid in math mode.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \item
+           erb+DoChiCalc_IO8.m+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:97: Text line contains an invalid character.
+l.97 \item 
+            erb+DoChiCalc_IO8.m+
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+
+./Chipod_Note_IO8_test.tex:97: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \item e
+             rb+DoChiCalc_IO8.m+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:97: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \item e
+             rb+DoChiCalc_IO8.m+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:98: LaTeX Error: Command \end{itemize} invalid in ma
+th mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:98: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:98: LaTeX Error: Something's wrong--perhaps a missin
+g \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:98: Missing $ inserted.
+<inserted text> 
+                $
+l.98 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./Chipod_Note_IO8_test.tex:103: Text line contains an invalid character.
+l.103 ...are combined into a single structure w/ 
+                                                  erb+MakeCombinedStruct_IO8.m+
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+./Chipod_Note_IO8_test.tex:103: Missing $ inserted.
+<inserted text> 
+                $
+l.103 ...gle structure w/ erb+MakeCombinedStruct_
+                                                  IO8.m+
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chipod_Note_IO8_test.tex:104: LaTeX Error: Command \item invalid in math mode
+.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 \item
+           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:105: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \end
+          {itemize}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:105: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \end
+          {itemize}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:105: LaTeX Error: Command \end{itemize} invalid in m
+ath mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:105: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:105: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:105: Missing $ inserted.
+<inserted text> 
+                $
+l.105 \end{itemize}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (12.79607pt too wide) in paragraph at lines 103--106
+[]\OT1/cmr/m/n/10.95 Data from all casts are com-bined into a sin-gle struc-tur
+e w/ erb+MakeCombinedStruct$[]\OML/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 8\OML/cmm
+/m/it/10.95 :m\OT1/cmr/m/n/10.95 +$ 
+ []
+
+[2] [3]
+
+./Chipod_Note_IO8_test.tex:114: LaTeX Error: Command \item invalid in math mode
+.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 ef{chidepinfo} gives the info for $\item
+                                               Table
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:114: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 ef{chidepinfo} gives the info for $\item T
+                                                able
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:114: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114 ef{chidepinfo} gives the info for $\item T
+                                                able
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:116: LaTeX Error: Command \end{itemize} invalid in m
+ath mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:116: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chipod_Note_IO8_test.tex:116: LaTeX Error: Something's wrong--perhaps a missi
+ng \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./Chipod_Note_IO8_test.tex:116: Missing $ inserted.
+<inserted text> 
+                $
+l.116 \end{itemize}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (62.79974pt too wide) in paragraph at lines 113--117
+[]\OT1/cmr/m/n/10.95 Table efchide-pinfo gives the info for $\OML/cmm/m/it/10.9
+5 Tableef[]givesasummaryoftheprocessingfromMakeCasts:$ 
+ []
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 124.
+
+
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/I
+O8_timeoffsets_all.png, id=89, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/IO8_timeoffsets_all.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/IO8_timeoffsets_all.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/IO8_timeoffsets_all.png used on input line 128.
+(pdftex.def)             Requested size: 505.88875pt x 614.29349pt.
+
+Overfull \hbox (75.88412pt too wide) in paragraph at lines 128--129
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 83.5461pt on input line 131.
+
+[4] [5 </Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/fi
+gures/IO8_timeoffsets_all.png (PNG copy)>]
+
+LaTeX Warning: File `SNSN1013_001_Fig1_RawChipodTS.png' not found on input line
+ 139.
+
+
+./Chipod_Note_IO8_test.tex:139: Package pdftex.def Error: File `SNSN1013_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...e=0.7]{SNSN1013_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `SNSN2020_001_Fig1_RawChipodTS.png' not found on input line
+ 145.
+
+
+./Chipod_Note_IO8_test.tex:145: Package pdftex.def Error: File `SNSN2020_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 ...e=0.7]{SNSN2020_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `SNSN2014_001_Fig1_RawChipodTS.png' not found on input line
+ 151.
+
+
+./Chipod_Note_IO8_test.tex:151: Package pdftex.def Error: File `SNSN2014_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ...e=0.7]{SNSN2014_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `SNSN2009_001_Fig1_RawChipodTS.png' not found on input line
+ 157.
+
+
+./Chipod_Note_IO8_test.tex:157: Package pdftex.def Error: File `SNSN2009_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 ...e=0.7]{SNSN2009_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `SNSN2004_001_Fig1_RawChipodTS.png' not found on input line
+ 163.
+
+
+./Chipod_Note_IO8_test.tex:163: Package pdftex.def Error: File `SNSN2004_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163 ...e=0.7]{SNSN2004_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `SNSN2003_001_Fig1_RawChipodTS.png' not found on input line
+ 169.
+
+
+./Chipod_Note_IO8_test.tex:169: Package pdftex.def Error: File `SNSN2003_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 ...e=0.7]{SNSN2003_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `SNSN2002_001_Fig1_RawChipodTS.png' not found on input line
+ 175.
+
+
+./Chipod_Note_IO8_test.tex:175: Package pdftex.def Error: File `SNSN2002_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 ...e=0.7]{SNSN2002_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `SNSN2001_001_Fig1_RawChipodTS.png' not found on input line
+ 181.
+
+
+./Chipod_Note_IO8_test.tex:181: Package pdftex.def Error: File `SNSN2001_001_Fi
+g1_RawChipodTS.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 ...e=0.7]{SNSN2001_001_Fig1_RawChipodTS.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[6] [7] [8]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 194.
+
+
+LaTeX Warning: File `IO8_ctd_t_s.png' not found on input line 196.
+
+
+./Chipod_Note_IO8_test.tex:196: Package pdftex.def Error: File `IO8_ctd_t_s.png
+' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 \includegraphics[scale=0.7]{IO8_ctd_t_s.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[9
+
+]
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/XC_SN1013_Vs_lat_upAllVars.png, id=125, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/XC_SN1013_Vs_lat_upAllVars.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/XC_SN1013_Vs_lat_upAllVars.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/XC_SN1013_Vs_lat_upAllVars.png used on input line 206
+.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+
+
+LaTeX Warning: File `XC_SN2020_Vs_lat_upAllVars.png' not found on input line 21
+2.
+
+
+./Chipod_Note_IO8_test.tex:212: Package pdftex.def Error: File `XC_SN2020_Vs_la
+t_upAllVars.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 ...cale=0.7]{XC_SN2020_Vs_lat_upAllVars.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `XC_SN2014_Vs_lat_upAllVars.png' not found on input line 21
+8.
+
+
+./Chipod_Note_IO8_test.tex:218: Package pdftex.def Error: File `XC_SN2014_Vs_la
+t_upAllVars.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 ...cale=0.7]{XC_SN2014_Vs_lat_upAllVars.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/XC_SN2009_Vs_lat_upAllVars.png, id=126, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/XC_SN2009_Vs_lat_upAllVars.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/XC_SN2009_Vs_lat_upAllVars.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/XC_SN2009_Vs_lat_upAllVars.png used on input line 224
+.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/XC_SN2004_Vs_lat_downAllVars.png, id=127, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/XC_SN2004_Vs_lat_downAllVars.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/XC_SN2004_Vs_lat_downAllVars.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/XC_SN2004_Vs_lat_downAllVars.png used on input line 2
+30.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/XC_SN2003_Vs_lat_upAllVars.png, id=128, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/XC_SN2003_Vs_lat_upAllVars.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/XC_SN2003_Vs_lat_upAllVars.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/XC_SN2003_Vs_lat_upAllVars.png used on input line 236
+.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/XC_SN2002_Vs_lat_downAllVars.png, id=129, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/XC_SN2002_Vs_lat_downAllVars.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/XC_SN2002_Vs_lat_downAllVars.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/XC_SN2002_Vs_lat_downAllVars.png used on input line 2
+42.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/XC_SN2001_Vs_lat_downAllVars.png, id=130, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/XC_SN2001_Vs_lat_downAllVars.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/XC_SN2001_Vs_lat_downAllVars.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/XC_SN2001_Vs_lat_downAllVars.png used on input line 2
+48.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+ [10
+
+] [11 </Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/fig
+ures/XC/XC_SN1013_Vs_lat_upAllVars.png (PNG copy)>] [12] [13 </Users/Andy/Cruis
+es_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/XC/XC_SN2009_Vs_lat
+_upAllVars.png (PNG copy)>] [14 </Users/Andy/Cruises_Research/OceanMixingGroup/
+cruises/ctd_chipod/IO8/figures/XC/XC_SN2004_Vs_lat_downAllVars.png (PNG copy)>]
+ [15 </Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/XC_SN2003_Vs_lat_upAllVars.png (PNG copy)>] [16 </Users/Andy/Cruises_Res
+earch/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/XC/XC_SN2002_Vs_lat_downA
+llVars.png (PNG copy)>] [17 </Users/Andy/Cruises_Research/OceanMixingGroup/crui
+ses/ctd_chipod/IO8/figures/XC/XC_SN2001_Vs_lat_downAllVars.png (PNG copy)>]
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/IO8_chi_AllSNs_Vslat.png, id=173, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/IO8_chi_AllSNs_Vslat.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/IO8_chi_AllSNs_Vslat.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/IO8_chi_AllSNs_Vslat.png used on input line 258.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+
+</Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/X
+C/IO8_KT_AllSNs_Vslat.png, id=174, 505.89pt x 614.295pt>
+File: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figu
+res/XC/IO8_KT_AllSNs_Vslat.png Graphic file (type png)
+
+<use /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/figur
+es/XC/IO8_KT_AllSNs_Vslat.png>
+Package pdftex.def Info: /Users/Andy/Cruises_Research/OceanMixingGroup/cruises/
+ctd_chipod/IO8/figures/XC/IO8_KT_AllSNs_Vslat.png used on input line 264.
+(pdftex.def)             Requested size: 354.12057pt x 430.00356pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
+ [18
+
+] [19 </Users/Andy/Cruises_Research/OceanMixingGroup/cruises/ctd_chipod/IO8/fig
+ures/XC/IO8_chi_AllSNs_Vslat.png (PNG copy)>] [20 </Users/Andy/Cruises_Research
+/OceanMixingGroup/cruises/ctd_chipod/IO8/figures/XC/IO8_KT_AllSNs_Vslat.png (PN
+G copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
+ (./Chipod_Note_IO8_test.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
+Package rerunfilecheck Info: File `Chipod_Note_IO8_test.out' has not changed.
+(rerunfilecheck)             Checksum: E0EA8836C421A4C6A30F7438E8302F21;764.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
+ ) 
+Here is how much of TeX's memory you used:
+ 6890 strings out of 493014
+ 104245 string characters out of 6133351
+ 192944 words of memory out of 5000000
+ 10249 multiletter control sequences out of 15000+600000
+ 11520 words of font info for 44 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,6n,28p,335b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Chipod_Note_IO8_test.pdf (20 pages, 1618836 bytes).
+PDF statistics:
+ 235 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+
