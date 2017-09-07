@@ -1,6 +1,6 @@
-CTD-chipods deployed on IO8 cruise in early 2016.
+# CTD-chipods deployed on IO8 cruise in early 2016.
 
-
+## Cruise Info
 - Chi-pod SNs deployed: 2001, 2003, 2004, 2020?
 - Installer/trainer   : Andy
 - Tender on Cruise    : Hannah Dawson - hannah.dawson@utas.edu.au
@@ -16,5 +16,8 @@ CTD-chipods deployed on IO8 cruise in early 2016.
 - Processing status   : Not processed
 - Notes 	 	    : CTD package lost during cruise (w/ 4 chi-pods).
 
-Map of cast locations:
+## Map of cast locations:
 <https://github.com/OceanMixingGroup/cruises/blob/master/ctd_chipod/IO8/Figures/I08_kml_map.jpg>
+
+## Processing
+- /mfiles/process_IO8_script.m
