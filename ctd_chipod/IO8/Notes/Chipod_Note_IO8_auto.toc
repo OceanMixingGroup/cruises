@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {3}Processing Notes}{5}{section.3}
 \contentsline {subsubsection}{\numberline {3.0.1}Time Offsets}{5}{subsubsection.3.0.1}
 \contentsline {section}{\numberline {4}Example Raw Chipod Data for 1 cast}{7}{section.4}
-\contentsline {section}{\numberline {5}Results}{9}{section.5}
-\contentsline {subsubsection}{\numberline {5.0.1}CTD Data }{10}{subsubsection.5.0.1}
-\contentsline {subsubsection}{\numberline {5.0.2}Data from each individual Chipod}{11}{subsubsection.5.0.2}
-\contentsline {subsubsection}{\numberline {5.0.3}One variable from all Chipods}{19}{subsubsection.5.0.3}
+\contentsline {section}{\numberline {5}Results}{8}{section.5}
+\contentsline {subsubsection}{\numberline {5.0.1}CTD Data }{11}{subsubsection.5.0.1}
+\contentsline {subsubsection}{\numberline {5.0.2}Data from each individual Chipod}{12}{subsubsection.5.0.2}
+\contentsline {subsubsection}{\numberline {5.0.3}One variable from all Chipods}{20}{subsubsection.5.0.3}
