@@ -11,15 +11,25 @@
 clear ; close all
 
 
+%~~~~~~~~~~~~~~~~~
 % *** Should only need to modify below section, 'Load_chipod_paths_', and 
 % Chipod_Deploy_Info_... files
 %~~~~~~~~~~~~~~~~~ 
 the_project='IO8'
 
 % path to 'mixingsoftware' 
-mixpath = '/Users/Andy/Cruises_Research/mixingsoftwae/';
-
+mixpath = '/Users/Andy/Cruises_Research/mixingsoftware/';
 %~~~~~~~~~~~~~~~~~
+
+
+% Add paths we will need
+addpath(fullfile(mixpath,'CTD_Chipod'));
+addpath(fullfile(mixpath,'CTD_Chipod','mfiles'));
+addpath(fullfile(mixpath,'chipod'))    ;% raw_load_chipod.m
+addpath(fullfile(mixpath,'general'))   ;% makelen.m in /general is needed
+addpath(fullfile(mixpath,'marlcham'))  ;% for integrate.m
+addpath(fullfile(mixpath,'adcp'))      ;% need for mergefields_jn.m in load_chipod_data
+addpath(fullfile(mixpath,'seawater'))      ;% 
 
 eval(['Load_chipod_paths_' the_project])
 eval(['Chipod_Deploy_Info_' the_project])
@@ -31,13 +41,6 @@ if status_out~=1
 end
 
 
-% Add paths we will need
-addpath(fullfile(mixpath,'CTD_Chipod'));
-addpath(fullfile(mixpath,'CTD_Chipod','mfiles'));
-addpath(fullfile(mixpath,'chipod'))    ;% raw_load_chipod.m
-addpath(fullfile(mixpath,'general'))   ;% makelen.m in /general is needed
-addpath(fullfile(mixpath,'marlcham'))  ;% for integrate.m
-addpath(fullfile(mixpath,'adcp'))      ;% need for mergefields_jn.m in load_chipod_data
 
 %% Make plots of the raw chipod files
 
