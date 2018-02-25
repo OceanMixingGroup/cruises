@@ -12,7 +12,7 @@
 %%
 
 ChiInfo         = struct();
-ChiInfo.Project = 'IO8';          % Description of project
+ChiInfo.the_project = 'IO8';          % Description of project
 ChiInfo.SNs     = {'SN1013','SN2020','SN2014','SN2009','SN2004','SN2003','SN2002','SN2001'}; % list of chipod SNs
 %ChiInfo.CastString = 'I08S';   % identifying string in CTD cast files
 ChiInfo.CastString = '';
